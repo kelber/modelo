@@ -1,0 +1,53 @@
+<div class="row  animated bounceInRight">
+	<div class="card">
+		<!-- Card Content -->
+		<h3 align="center">Cadastro para abertura loja </h3>
+	<hr />
+	<!-- 	<div ng-controller=""> -->
+	<h5 align="center" ng-show="profileCtrl.profile.displayName">Futuro Franqueado: {{profileCtrl.profile.displayName }}</h5>
+
+ <div class="row">
+	 <form class="col s12" name="profileCtrl.form" ng-submit="profileCtrl.updateProfile()"> 
+       <div class="row">
+        <div class="input-field col s12">
+			<input id="nome" type="text" class="validate" ng-model="profileCtrl.profile.displayName" placeholder="Seu nome" required>
+			<input id="telUm" type="text" class="validate" ng-model="profileCtrl.profile.phone" placeholder="Telefone Fixo" required >
+			<input id="telDois" type="text" class="validate" ng-model="profileCtrl.profile.phoneMobile" placeholder="Celular" required>
+			<input id="cpf" type="text" class="validate" ng-model="profileCtrl.profile.cpf" placeholder="CPF" required>
+			<input id="rg" type="text" class="validate" ng-model="profileCtrl.profile.rg" placeholder="RG" required>
+			<input id="endereco" type="text" class="validate" ng-model="profileCtrl.profile.address" placeholder="Endereco" required>
+			<input id="cidade" type="text" class="validate" ng-model="profileCtrl.profile.city" placeholder="Cidade" required>
+			<input id="obs" type="text" class="validate" ng-model="profileCtrl.profile.obs" placeholder="escreva alguma observacao" required>
+			<div ng-model="profileCtrl.profile.timestamp"></div>
+
+			<br />
+			<br />
+
+			<h5 align="center">Aperte Salvar </h5>
+		 <div class="row">
+				<button class="btn col m12" type="submit">Salvar</button> 	
+
+		<hr />
+		
+		 <div ng-show="profileCtrl.form.$valid">
+
+			 <h3 align="center">Parabéns !! <br>{{ profileCtrl.profile.displayName }} </h3>
+			 <p align="">Você preencheu os dados para liberação da C.O.F .Seus dados já estão no contrato e lembramos que a Ultra Visão preza pela confidencialidade dos seus dados e das informações aqui prestadas.</p>
+				<h5 align="center">Boa Leitura !!</h5>
+				<h1 align="center"><a ui-sref="cof">C.O.F </a> </h1>
+		</div>
+
+		<!-- controller Profile -->
+	</div>
+
+
+
+
+
+			  
+      </div>
+    </form>
+  </div>
+
+
+

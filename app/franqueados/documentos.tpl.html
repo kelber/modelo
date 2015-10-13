@@ -1,0 +1,176 @@
+
+<div class="row  animated bounceInLeft">
+ <div class="card">
+    <!-- Card Content -->
+	<div class="row">
+	<img ng-src="images/logotipo.png" class="col m2" style="width: 15%;"> 
+	<h3 align="center">Relação de Documentos </h3>
+	<hr />
+	<!-- 	<p align="center">Obs: cpA = copia autenticada</p> -->
+
+	<p align="center"><i>Portaria 1681 23/10/2014</i></p>
+
+	</div>
+	<form ng-submit="docsCtrl.sendDoc(doc)">
+   <p>
+      <input type="checkbox" class="filled-in" id="docs.cnpj" ng-model="docsCtrl.docs.cnpj"  />
+	  <label for="docs.cnpj">CNPJ - <strong>atividade exclusiva de vistoria veicular</strong></label>
+    </p>
+<p>
+      <input type="checkbox" class="filled-in" id="docs.certidaoNegativaFalencia" ng-model="docsCtrl.docs.certidaoNegativaFalencia" />
+      <label for="docs.certidaoNegativaFalencia">Certidao negativa de Falencia (Max 60 dias) NO CARTORIO da sede da pessoa juridica</label>
+    </p>
+ <p>
+      <input type="checkbox" class="filled-in" id="docs.rg" ng-model="docsCtrl.docs.rg" />
+      <label for="docs.rg">Copias RG, CPF, CNPJ ....</label>
+    </p>
+ <p>
+      <input type="checkbox" class="filled-in" id="docs.antecedentesCriminais" ng-model="docsCtrl.docs.antecedentesCriminais"  />
+	  <label for="docs.antecedentesCriminais">Certidoes distribuicao criminais ( Estadual , Federal ) Juridiscao do domicilio dos socios <br><a href="http://www.ssp.sp.gov.br/servicos/atestado.aspx" target="_blank">Link Estadual</a>
+ <br><a href="http://www.dpf.gov.br/servicos/antecedentes-criminais" target="_blank">Link Federal</a>
+
+</label>
+  </p>
+ <p>
+      <input type="checkbox" class="filled-in" id="docs.regulariadeFiscal" ng-model="docsCtrl.docs.regularidadeFiscal" />
+      <label for="docs.regulariadeFiscal">Regularidade Fiscal
+
+ <br><a href="http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=174&idArea=3&idAssunto=42" target="_blank">Link Federal regularidade</a>
+
+
+ </label>
+    </p>
+<p>
+      <input type="checkbox" class="filled-in" id="docs.regulariadeTrabalhista" ng-model="docsCtrl.docs.regularidadeTrabalhista" />
+	  <label for="docs.regulariadeTrabalhista">Regularidade Trabalhista
+ <br><a href="http://www.tst.jus.br/certidao" target="_blank">Link regularidade trabalhista</a>
+
+	  </label>
+    </p>
+<p>
+      <input type="checkbox" class="filled-in" id="docs.provaInscricaoCnpj" ng-model="docsCtrl.docs.provaInscricaoCnpj"  />
+	  <label for="docs.provaInscricaoCnpj">Prova Inscricao CNPJ
+ <br><a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank">Link prova Inscricao CNPJ</a> 
+	  </label>
+    </p>
+<p>
+      <input type="checkbox" class="filled-in" id="docs.provaInscricaoFazendaEstadual"  ng-model="docsCtrl.docs.provaInscricaoEstadual" />
+	  <label for="docs.provaInscricaoFazendaEstadual">Prova Inscricao Estadual
+ <br><a href="http://pfeserv1.fazenda.sp.gov.br/sintegrapfe/consultaSintegraServlet" target="_blank">Link prova Inscricao Estadual</a>
+
+	  </label>
+    </p>
+
+<p>
+      <input type="checkbox" class="filled-in" id="docs.provaInscricaoMunicipal"  ng-model="docsCtrl.docs.provaInscricaoMunicipal" />
+	  <label for="docs.provaInscricaoMunicipal">Prova Inscricao Municipal
+ <br><a href="https://www3.prefeitura.sp.gov.br/fdc/fdc_imp02_cgc.asp" target="_blank">Link prova Inscricao Municipal</a>
+
+	  </label>
+    </p>
+
+
+ <p>
+      <input type="checkbox" class="filled-in" id="docs.provaRegularidadeFgts"  ng-model="docsCtrl.docs.provaRegularidadeFgts" />
+      <label for="docs.provaRegularidadeFgts">Prova de Regularidade c/ FGTS</label>
+    </p>
+ 
+ <p>
+      <input type="checkbox" class="filled-in" id="docs.provaRegularidadeRais"  ng-model="docsCtrl.docs.provaRegularidadeRais" />
+      <label for="docs.provaRegularidadeRais">Prova de Regularidade c/ RAIS</label>
+    </p>
+
+ <p>
+      <input type="checkbox" class="filled-in" id="certNegativaJTrabalho"  ng-model="docsCtrl.docs.certidaoNegativaJTrabalho" />
+      <label for="certNegativaJTrabalho">Certidao Negativa junto a justica do trabalho</label>
+    </p>
+ <p>
+      <input type="checkbox" class="filled-in" id="declaracaoDonoIsencao"  ng-model="docsCtrl.docs.declaracaoDonoIsencao" />
+      <label for="declaracaoDonoIsencao">Declaracao do dono sob isencao na atividade de vistoria veicular</label>  <label for="declaracaoDonoIsencao">Declaração do dono sob isenção na atividade de vistoria veicular</label>
+    </p>
+
+
+
+ </div>
+
+
+
+
+ <div class="card ">
+    <!-- Card Content -->
+	<h3 align="center">Documentação Vistoriadores </h3>
+	<hr />
+	<p align="center">Obs: cpA = copia autenticada</p>
+   <p>
+      <input type="checkbox" class="filled-in" id="docs.vistoriadoresDocs"  ng-model="docsCtrl.docs.vistoriadoresDocs" />
+	  <label for="docs.vistoriadoresDocs">Copias do RG, CPF ,compr Residencia ...</label>
+  </p> 
+   <p>
+      <input type="checkbox" class="filled-in" id="docs.vistoriadoresFoto"  ng-model="docsCtrl.docs.vistoriadoresFoto" />
+	  <label for="docs.vistoriadoresFoto">1 x Foto 3x4 para detran</label>
+  </p> 
+
+
+  <p>
+      <input type="checkbox" class="filled-in" id="docs.vistoriadoresDiploma"  ng-model="docsCtrl.docs.vistoriadoresDiploma" />
+	  <label for="docs.vistoriadoresDiploma">Diploma Ultravisao</label>
+  </p> 
+
+ <p>
+      <input type="checkbox" class="filled-in" id="docs.vistoriadoresAntecedentesCriminais" ng-model="docsCtrl.docs.vistoriadoresAntecedentesCriminais"  />
+	  <label for="docs.vistoriadoresAntecedentesCriminais">Certidoes distribuicao criminais ( Estadual , Federal ) Juridiscao do domicilio dos socios <br><a href="http://www.ssp.sp.gov.br/servicos/atestado.aspx" target="_blank">Link Estadual</a>
+ <br><a href="http://www.dpf.gov.br/servicos/antecedentes-criminais" target="_blank">Link Federal</a>
+
+</label>
+  </p>
+  
+
+
+
+  </div>
+
+
+ <div class="card">
+    <!-- Card Content -->
+	<h3 align="center">Ponto Comercial </h3>
+	<hr />
+	<p align="center">Obs: cpA = copia autenticada</p>
+   <p>
+      <input type="checkbox" class="filled-in" id="docs.imovelPlanta"  ng-model="docsCtrl.docs.imovelPlanta" />
+	  <label for="docs.imovelPlanta">Planta baixa do imovel </label>
+  </p> 
+   <p>
+      <input type="checkbox" class="filled-in" id="docs.imovelAlvaraFuncionamento"  ng-model="docsCtrl.docs.imovelAlvaraFuncionamento" />
+	  <label for="docs.imovelAlvaraFuncionamento">Alvara Funcionamento</label>
+  </p> 
+ 
+  <p>
+      <input type="checkbox" class="filled-in" id="docs.kitOcr"  ng-model="docsCtrl.docs.kitOcr" />
+	  <label for="docs.kitOcr">Instalacao do Kit OCR </label> </p> 
+  <p>
+      <input type="checkbox" class="filled-in" id="docs.seguroObrigatorio" ng-model="docsCtrl.docs.seguroObrigatorio" />
+	  <label for="docs.seguroObrigatorio">Seguro de responsabilidade civil profissional vistoria veicular R$ 500.000,00</label>
+  </p> 
+  <hr />
+	<h3 align="center">Observacoes </h3>
+   <p>
+      <input type="checkbox" class="filled-in" id="docs.iso"  ng-model="docsCtrl.docs.iso"  />
+	  <label for="docs.iso">ISO 9000 - Apenas depois de 8 meses de funcionamento .....</label>
+  </p> 
+
+
+  <p>
+      <input type="checkbox" class="filled-in" id="docs.obsUm"  ng-model="docsCtrl.docs.obsUm" />
+	  <label for="docs.obsUm">OBS: Documentação com no MAXIMO 90 dias de validade</label>
+  </p> 
+  <br />	<br />
+
+  <button align="center" class="btn col m12" type="submit" ng-click="docsCtrl.sendDoc(doc)">Salvar</button>
+  <br />
+  <br />
+  </form>
+
+
+
+
+

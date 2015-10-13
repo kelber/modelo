@@ -1,0 +1,50 @@
+<br />
+<br />
+<div class="row">
+	<div class="container">
+<div class="col s10 offset-m5 m5 l6 blue-grey darken-3">
+	<form ng-submit="authCtrl.register()">
+	<div class="row">
+		<div class="container">
+		
+		<h3 class="white-text" align="center">Registre-se</h3>
+		<hr />
+		<input class="white-text"  type="email" placeholder="Seu email..." ng-model="authCtrl.user.email" required/>
+		<br />
+		<input class="white-text" type="password" placeholder="Sua senha..." ng-model="authCtrl.user.password" required />
+		<br />
+</div>
+<div class="container">
+	
+
+<div class="switch">
+    <label>
+      Off
+      <input type="checkbox" ng-model="authCtrl.terms"/>
+      <span class="lever" ></span>
+      TERMOS DO CADASTRO
+    </label>
+  </div>
+			<div ng-show="authCtrl.terms">
+				<p class="white-text"><i>Estou ciente de que o material que sera apresentado e toda sua documentação e restritamente sigilosa, rastreável e confidencial.<br>a Ultravisão preza por isto e pede que Não se tire copias indevidas do documentos aqui apresentados.</i></p>
+			</div>
+			<button ng-show="authCtrl.terms" class="btn btn-large col s10 m12 l12"  type="submit">Registrar-se</button>
+		
+
+			<br />
+			<br />
+			<br />
+
+		</form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+

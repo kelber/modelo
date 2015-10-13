@@ -12,8 +12,10 @@
     <!-- endbower -->
     <!-- endbuild -->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
       
-	<link rel="stylesheet" href="/bower_components/Materialize/dist/css/materialize.css" media="screen,projection">
+    <link rel="stylesheet" href="/bower_components/Materialize/bin/materialize.css" />
+	<link rel="stylesheet" href="/bower_components/Materialize/bin/materialize.css" media="screen,projection">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -41,20 +43,22 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/bower_components/angular-md5/angular-md5.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/bower_components/firebase/firebase.js"></script>
     <script src="/bower_components/angularfire/dist/angularfire.js"></script>
-    <script src="/bower_components/Materialize/dist/js/materialize.js"></script>
+    <script src="/bower_components/Materialize/bin/materialize.js"></script>
+ 
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="auth/auth.ctl.js"></script>
+        <script src="auth/auth.svc.js"></script>
+        <script src="franqueados/franqueados.ctl.js"></script>
+        <script src="users/profile.ctl.js"></script>
+        <script src="users/users.svc.js"></script>
         <!-- endbuild -->
-
-
-
-
 </body>
 </html>

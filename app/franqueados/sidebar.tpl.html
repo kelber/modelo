@@ -1,0 +1,23 @@
+
+	<nav class="sidebarFranqueados z-depth-5 fixed ">
+  <ul class="right hide-on-med-and-down" >
+	  <li><a ui-sref="profile"><img ng-src="images/logotipo.png" width="15%" alt="" class="circle responsive-img"> Meus Dados </a></li>
+
+
+
+    <li><a ng-click="profileCtrl.logout()">Sair</a></li>
+  </ul>
+  <ul id="slide-in" class="side-nav sidebarFranqueados fixed"> 
+	  <h4 align="center" ui-sref="franqueados.bemvindo">Ultra Visao</h4>
+	  <li><a ui-sref-active="active" ui-sref="franqueados.bemvindo">Bem vindo</a></li>
+	  <li><a ui-sref-active="active" ui-sref="franqueados.franchising">Franchising</a></li>
+	  <li><a ui-sref-active="active" ui-sref="franqueados.cronogramas">Cronogramas</a></li>
+	  <li><a ui-sref-active="active" ui-sref="franqueados.resumocof">Resumo da C.O.F</a></li>
+	  <hr />
+	  <li><a ui-sref-active="active" ui-sref="franqueados.cadastros">Cadastros</a></li>
+	  <hr />
+	  <li><a ui-sref-active="active" ui-sref="franqueados.documentos">DOC - Ocultar</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
+ 
